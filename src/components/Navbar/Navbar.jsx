@@ -17,7 +17,9 @@ const Navbar = () => {
             {/* Desktop Navigation */}
 
             <div className="app__navbar-logo">
-                <img src={images.logo} alt="logo" />
+                <Link to={"/"}>
+                <img src={images.logo} alt="logo"></img>
+                </Link>
             </div>
 
         <ul className="app__navbar-links">
@@ -27,9 +29,9 @@ const Navbar = () => {
             <HashLink className="link" smooth to="/#Menu">Menu</HashLink>
             <HashLink className="link" smooth to="/#About">About</HashLink>
         </ul>
-           
+
         {/* Mobile Navigation */}
-        
+
         <div className="app__navbar-menu">
             <HiMenuAlt4
                 onClick={() => { setToggle(true) }}
@@ -38,7 +40,7 @@ const Navbar = () => {
             {
              toggle &&  (
              <div>
-                <HiX 
+                <HiX
                     onClick={() => {
                         setToggle(false)
                     }} 
