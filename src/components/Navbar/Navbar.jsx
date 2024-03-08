@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul className="app__navbar-links">
             <Link className="link" to={"/"}>Home</Link>
             <Link className="link" to={'/Reservations'}>Reservation</Link>
-            <Link className="link" to={"/OrderOnline"}>OrderOnline</Link>
+            <Link className="link" to={"/OrderOnline"}>Order Online</Link>
             <HashLink className="link" smooth to="/#Menu">Menu</HashLink>
             <HashLink className="link" smooth to="/#About">About</HashLink>
         </ul>
