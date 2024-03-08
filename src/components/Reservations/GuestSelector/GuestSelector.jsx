@@ -66,3 +66,5 @@ const GuestSelector = ({ chooseGuest }) => {
         </div>
     );
 };
+
+export default GuestSelector; 
